@@ -1,6 +1,13 @@
+import { useReducer } from 'react';
+import reducer from './reducer';
+
 import './App.css';
 
 function App() {
+  const [state, dispatch] = useReducer(
+    reducer,
+    {}
+  );
   return (
     <div className="App">
       <header className="App-header">
