@@ -1,4 +1,8 @@
-import { useReducer } from 'react';
+import {
+  useEffect,
+  useReducer,
+} from 'react';
+import fetchWeather from './utils/fetchWeather';
 import reducer from './reducer';
 import Weather from './components/Weather';
 
@@ -9,6 +13,18 @@ function App() {
     reducer,
     {}
   );
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const weather = await fetchWeather();
+        console.log({ weather });
+      } catch (error) {
+        console.error(error);
+      }
+    })();
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
