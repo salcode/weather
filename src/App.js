@@ -1,5 +1,6 @@
 import { useReducer } from 'react';
 import reducer from './reducer';
+import Weather from './components/Weather';
 
 import './App.css';
 
@@ -23,6 +24,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <Weather
+        data={state.weather}
+      />
     </div>
   );
 }
