@@ -18,6 +18,10 @@ function App() {
     (async () => {
       try {
         const weather = await fetchWeather();
+        dispatch({
+          type: 'setWeather',
+          value: weather,
+        });
         console.log({ weather });
       } catch (error) {
         console.error(error);
