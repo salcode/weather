@@ -4,7 +4,7 @@ import {
 } from 'react';
 import fetchWeather from './utils/fetchWeather';
 import reducer from './reducer';
-import Weather from './components/Weather';
+import WeatherReport from './components/WeatherReport';
 
 import './App.css';
 
@@ -36,7 +36,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
       </header>
-      <Weather
+      <WeatherReport
         data={state.weather}
       />
     </div>
