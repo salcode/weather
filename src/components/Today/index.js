@@ -1,3 +1,5 @@
+import LocalTime from "../LocalTime";
+
 export default function Today({
   daily,
   hourly
@@ -7,7 +9,7 @@ export default function Today({
     <ul>
       {
         hourly.map((data) => <li key={data.dt}>
-          {data.dt} {data.temp}
+          <LocalTime dt={data.dt} /> {data.temp}&deg;F
         </li>)
       }
     </ul>
