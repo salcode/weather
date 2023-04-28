@@ -16,6 +16,9 @@ body {
   margin: 1rem;
   padding: 0.1rem;
 }
+a {
+  color: #5cf;
+}
 
 .App {
   text-align: center;
@@ -28,10 +31,6 @@ ul {
 
 .conditions img {
   vertical-align: middle;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 #open-weather-logo {
