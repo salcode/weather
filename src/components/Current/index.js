@@ -5,6 +5,7 @@ export default function Current({
   current: {
     dt,
     temp,
+    rain = {},
     weather,
   },
 }) {
@@ -14,6 +15,7 @@ export default function Current({
     <LocalTime dt={dt} />
     <Conditions
       conditions={weather}
+      rain={rain}
     />
   </>;
 }
