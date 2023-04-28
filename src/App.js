@@ -22,7 +22,6 @@ function App() {
           type: 'setWeather',
           value: weather,
         });
-        console.log({ weather });
       } catch (error) {
         console.error(error);
       }
