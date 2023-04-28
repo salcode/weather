@@ -1,0 +1,1 @@
+rsync -azv --exclude '.*' ./build/* ferrarello:www/ferrarello.com/public_html/weather
