@@ -5,8 +5,10 @@ export default function Today({
   daily,
   hourly
 }) {
+  const today = daily[0] ?? {};
   return <>
     <h2>Today</h2>
+    <p>{today.temp.max}&deg; / {today.temp.min}&deg;</p>
     <details>
       <ul>
         {
