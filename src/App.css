@@ -33,6 +33,14 @@ ul {
   vertical-align: middle;
 }
 
+.day-forecast-list>li {
+  border-top: 1px solid #5cf;
+  padding: 1rem;
+}
+.day-forecast-list>li:first-child {
+  border-top: none;
+}
+
 #open-weather-logo {
   max-width: 200px;
 }
