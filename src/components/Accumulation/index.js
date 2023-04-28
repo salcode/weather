@@ -1,7 +1,9 @@
+import convertMillimetersToInches from '../../utils/convertMillimetersToInches';
+
 export default function Accumulation({
   mm,
 }) {
-  const inches = Math.round(mm * 0.03937008 * 10) / 10;
+  const inches = convertMillimetersToInches(mm);
 
   if (! inches) {
     return null;
