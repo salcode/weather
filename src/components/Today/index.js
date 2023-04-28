@@ -8,7 +8,7 @@ export default function Today({
   const today = daily[0] ?? {};
   return <>
     <h2>Today</h2>
-    <p>{today.temp.max}&deg; / {today.temp.min}&deg;</p>
+    <p>{Math.round(today.temp.max)}&deg; / {Math.round(today.temp.min)}&deg;</p>
     <details>
       <ul>
         {

@@ -12,7 +12,7 @@ export default function Current({
 }) {
   return <>
     <h2>Current</h2>
-    <p>{temp}&deg; F</p>
+    <p>{Math.round(temp)}&deg; F</p>
     <p><LocalTime dt={dt} /></p>
     <Conditions
       conditions={weather}
