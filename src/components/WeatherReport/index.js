@@ -10,16 +10,25 @@ export default function WeatherReport({
   }
   console.log({data});
   return(<>
-    <Current
-      current={data.current}
-    />
-    <Today
-      daily={data.daily}
-      hourly={data.hourly}
-    />
-    <Week
-      daily={data.daily}
-    />
+    <div className="section">
+      <Current
+        current={data.current}
+      />
+    </div>
+
+    <div className="section">
+      <Today
+        daily={data.daily}
+        hourly={data.hourly}
+      />
+    </div>
+
+    <div className="section">
+      <Week
+        daily={data.daily}
+      />
+    </div>
+
     <p>
       {data.current.temp}&deg; F
       <img src={`http://openweathermap.org/img/wn/${data.current.weather[0].icon}.png`} />
