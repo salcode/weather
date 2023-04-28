@@ -5,8 +5,8 @@ import Snow from '../Snow';
 export default function Conditions({
   className="conditions",
   conditions,
-  rain,
-  snow,
+  rain={},
+  snow={},
 }) {
   return <>
     <ul className={className}>
