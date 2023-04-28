@@ -7,12 +7,14 @@ export default function Today({
 }) {
   return <>
     <h2>Today</h2>
-    <ul>
-      {
-        hourly.map((data) => <li key={data.dt}>
-          <LocalTime dt={data.dt} /> <Temp temp={data.temp} />
-        </li>)
-      }
-    </ul>
+    <details>
+      <ul>
+        {
+          hourly.map((data) => <li key={data.dt}>
+            <LocalTime dt={data.dt} /> <Temp temp={data.temp} />
+          </li>)
+        }
+      </ul>
+    </details>
   </>;
 }
