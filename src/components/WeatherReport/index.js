@@ -1,4 +1,5 @@
 import Current from '../Current';
+import OpenWeatherAttribution from '../OpenWeatherAttribution';
 import Today from '../Today';
 import Week from '../Week';
 
@@ -27,6 +28,10 @@ export default function WeatherReport({
       <Week
         daily={data.daily}
       />
+    </div>
+
+    <div className="section">
+      <OpenWeatherAttribution />
     </div>
 
     <p>

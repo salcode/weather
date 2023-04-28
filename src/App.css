@@ -33,3 +33,7 @@ ul {
 .App-link {
   color: #61dafb;
 }
+
+#open-weather-logo {
+  max-width: 200px;
+}
