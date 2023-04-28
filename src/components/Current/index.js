@@ -6,6 +6,7 @@ export default function Current({
     dt,
     temp,
     rain = {},
+    snow = {},
     weather,
   },
 }) {
@@ -16,6 +17,7 @@ export default function Current({
     <Conditions
       conditions={weather}
       rain={rain}
+      snow={snow}
     />
   </>;
 }
