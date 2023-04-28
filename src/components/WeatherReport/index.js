@@ -33,11 +33,5 @@ export default function WeatherReport({
     <div className="section">
       <OpenWeatherAttribution />
     </div>
-
-    <p>
-      {data.current.temp}&deg; F
-      <img src={`http://openweathermap.org/img/wn/${data.current.weather[0].icon}.png`} />
-      {data.current.weather[0].description}
-    </p>
   </>);
 }
