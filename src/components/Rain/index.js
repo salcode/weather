@@ -1,8 +1,11 @@
+import convertMillimetersToInches from '../../utils/convertMillimetersToInches';
+
 export default function Rain({
-  rain,
+  mm,
 }) {
-  if (! rain['1h']) {
+  const inches = convertMillimetersToInches(mm);
+  if (! inches) {
     return null;
   }
-  return <p>{rain['1h']} mm of rain over the next hour</p>;
+  return <p>{inches}" of rain over the next hour</p>;
 }

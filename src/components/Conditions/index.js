@@ -17,7 +17,7 @@ export default function Conditions({
         />
       )}
     </ul>
-    <Rain rain={rain} />
-    <Snow snow={snow} />
+    <Rain mm={rain['1h'] ?? 0} />
+    <Snow mm={snow['1h'] ?? 0} />
   </>;
 }

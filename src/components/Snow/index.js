@@ -1,8 +1,11 @@
+import convertMillimetersToInches from '../../utils/convertMillimetersToInches';
+
 export default function Snow({
-  snow,
+  mm,
 }) {
-  if (! snow['1h']) {
+  const inches = convertMillimetersToInches(mm);
+  if (! inches) {
     return null;
   }
-  return <p>{snow['1h']} mm of snow over the next hour</p>;
+  return <p>{inches}" of snow over the next hour</p>;
 }
