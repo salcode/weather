@@ -9,7 +9,6 @@ export default function WeatherReport({
   if (! data) {
     return null;
   }
-  console.log({data});
   return(<>
     <div className="section">
       <Current
