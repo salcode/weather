@@ -22,5 +22,6 @@ export default function Day({
       snow={day.snow ?? 0}
     />
     <Conditions conditions={day.weather} />
+    <span>{day.summary}</span>
   </>;
 }
