@@ -1,3 +1,4 @@
+import Conditions from "../Conditions";
 import LocalTime from "../LocalTime";
 import Temp from "../Temp";
 
@@ -14,6 +15,7 @@ export default function Today({
         {
           hourly.map((data) => <li key={data.dt}>
             <LocalTime dt={data.dt} /> <Temp temp={data.temp} />
+            <Conditions conditions={data.weather} />
           </li>)
         }
       </ul>
