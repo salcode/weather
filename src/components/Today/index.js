@@ -10,7 +10,7 @@ export default function Today({
     <h2>Today</h2>
     <p>{Math.round(today.temp.max)}&deg; / {Math.round(today.temp.min)}&deg;</p>
     <details>
-      <ul>
+      <ul class="hour-forecast-list">
         {
           hourly.map((data) => <li key={data.dt}>
             <LocalTime dt={data.dt} /> <Temp temp={data.temp} />

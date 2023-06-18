@@ -34,10 +34,12 @@ ul {
   vertical-align: middle;
 }
 
+.hour-forecast-list>li,
 .day-forecast-list>li {
   border-top: 1px solid #5cf;
   padding: 1rem;
 }
+.hour-forecast-list>li:first-child,
 .day-forecast-list>li:first-child {
   border-top: none;
 }
