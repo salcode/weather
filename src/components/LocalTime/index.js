@@ -4,6 +4,7 @@ export default function LocalTime({
 }) {
   return new Date(dt * 1000)
     .toLocaleString("en-US", {
+      dateStyle: 'short',
       timeStyle,
     }
   );
