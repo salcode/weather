@@ -14,7 +14,10 @@ export default function Today({
       <ul class="hour-forecast-list">
         {
           hourly.map((data) => <li key={data.dt}>
-            <LocalTime dt={data.dt} /> <Temp temp={data.temp} />
+            <h3>
+              <LocalTime dt={data.dt} />
+            </h3>
+            <Temp temp={data.temp} />
             <Conditions conditions={data.weather} />
           </li>)
         }
