@@ -1,5 +1,6 @@
 import Conditions from "../Conditions";
 import LocalTime from "../LocalTime";
+import Precipitation from "../Precipitation";
 import Temp from "../Temp";
 
 export default function Today({
@@ -18,6 +19,9 @@ export default function Today({
               <LocalTime dt={data.dt} />
             </h3>
             <Temp temp={data.temp} />
+            <Precipitation
+              probability={data.pop}
+            />
             <Conditions conditions={data.weather} />
           </li>)
         }
