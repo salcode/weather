@@ -1,4 +1,4 @@
 export default async function fetchWeather() {
-  const resp = await fetch(process.env.REACT_APP_WEATHER_REST_API_PATH);
+  const resp = await fetch('/wp-json/myweather/v1/weather');
   return await resp.json();
 };
