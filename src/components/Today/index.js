@@ -11,6 +11,7 @@ export default function Today({
   return <>
     <h2>Today</h2>
     <p>{Math.round(today.temp.max)}&deg; / {Math.round(today.temp.min)}&deg;</p>
+    <h3>Hourly</h3>
     <details>
       <ul class="hour-forecast-list">
         {
