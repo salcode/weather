@@ -9,6 +9,6 @@ export default function Precipitation({
     return null;
   }
   return <>
-    (<span className="probability">{probability*100}%</span>) <Accumulation mm={rain + snow} />
+    (<span className="probability">{Math.round(probability*100)}%</span>) <Accumulation mm={rain + snow} />
   </>;
 }
