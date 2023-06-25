@@ -5,7 +5,7 @@ export default function UVI({
   if (! uvi) {
     return;
   }
-  return <span>
+  return <span className="uv-index">
     UV Index: {uvi}
   </span>;
 }
