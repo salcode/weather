@@ -2,6 +2,7 @@ import Conditions from "../Conditions";
 import LocalTime from "../LocalTime";
 import Precipitation from "../Precipitation";
 import Temp from "../Temp";
+import UVI from "../UVI";
 
 export default function Today({
   daily,
@@ -21,7 +22,7 @@ export default function Today({
             </h3>
             <Temp temp={data.temp} /> <Precipitation
               probability={data.pop}
-            />
+            /> <UVI weatherData={data} />
             <Conditions conditions={data.weather} />
           </li>)
         }
