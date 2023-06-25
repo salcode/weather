@@ -44,6 +44,10 @@ ul {
   border-top: none;
 }
 
+.day-forecast-list .uv-index {
+  display: block;
+}
+
 #open-weather-logo {
   max-width: 200px;
 }
