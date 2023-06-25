@@ -19,8 +19,7 @@ export default function Today({
             <h3>
               <LocalTime dt={data.dt} />
             </h3>
-            <Temp temp={data.temp} />
-            <Precipitation
+            <Temp temp={data.temp} /> <Precipitation
               probability={data.pop}
             />
             <Conditions conditions={data.weather} />
