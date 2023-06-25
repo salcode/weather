@@ -1,5 +1,6 @@
 import Conditions from "../Conditions";
 import Precipitation from "../Precipitation";
+import UVI from "../UVI";
 
 function getDayName(dt) {
   const dow = new Date(dt * 1000).toLocaleString(
@@ -20,6 +21,8 @@ export default function Day({
       probability={day.pop}
       rain={day.rain ?? 0}
       snow={day.snow ?? 0}
+    /> <UVI
+        weatherData={day}
     />
     <Conditions conditions={day.weather} />
     <span>{day.summary}</span>
